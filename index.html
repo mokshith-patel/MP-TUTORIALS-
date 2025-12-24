@@ -14,6 +14,7 @@ nav a:hover{color:#facc15}
 section{max-width:1100px;margin:auto;padding:25px}
 .box{background:#fff;padding:25px;margin-bottom:25px;border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,0.15)}
 h2{color:#2563eb}
+h3{color:#16a34a}
 .btn{background:#16a34a;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold}
 .btn:hover{background:#15803d}
 .banner{width:100%;border-radius:12px;margin-bottom:25px}
@@ -21,13 +22,32 @@ h2{color:#2563eb}
 .gallery img{width:100%;border-radius:10px}
 footer{background:#111827;color:white;text-align:center;padding:15px}
 </style>
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 35px;
+    margin-top: 12px;
+}  
 </head>
 
 <body>
 
 <header>
 <h1>MP TUTORIALS</h1>
-<p>Nursery to Class 10 • Online & Home Tuition</p>
+<p>School • Intermediate • Competitive Coaching</p>
 <p>📍 Kismathpur, Hyderabad</p>
 <a class="btn" href="tel:8309735706">Call Now</a>
 </header>
@@ -41,18 +61,55 @@ footer{background:#111827;color:white;text-align:center;padding:15px}
 
 <section>
 
+<!-- BANNER -->
 <img src="file_0000000072e07209bb5e02f2a9842ee9.png" class="banner" alt="MP Tutorials Banner">
 
+<!-- SCHOOL SECTION -->
 <div class="box">
-<h2>📚 Classes Provided</h2>
+<h2>🏫 School Tuition (Nursery – Class 10)</h2>
 <ul>
-<li>Nursery to Class 10</li>
 <li>All Subjects</li>
-<li>School syllabus based teaching</li>
-<li>Online & Home Tuition</li>
+<li>Strong foundation & concept clarity</li>
+<li>Regular practice & revision</li>
+<li>Online & Home Tuition available</li>
+</ul>
+
+<h3>🎯 Competitive Exams (Till 10th)</h3>
+<ul>
+<li>All Competitive Exams till 10th</li>
+<li>Gurukul Entrance Preparation</li>
+<li>Navodaya Entrance Preparation</li>
 </ul>
 </div>
 
+<!-- INTERMEDIATE SECTION -->
+<div class="box">
+<h2>🎓 Intermediate & Advanced Coaching</h2>
+
+<h3>Intermediate Subjects</h3>
+<ul>
+<li>Mathematics</li>
+<li>Physics</li>
+<li>Chemistry</li>
+<li>Analytical Reasoning</li>
+<li>Aptitude</li>
+</ul>
+
+<h3>Programming Courses</h3>
+<ul>
+<li>Python</li>
+<li>C</li>
+<li>Java</li>
+</ul>
+
+<h3>Engineering Entrance Preparation</h3>
+<ul>
+<li>JEE Preparation</li>
+<li>EAMCET Preparation</li>
+</ul>
+</div>
+
+<!-- GALLERY -->
 <div class="box">
 <h2>📸 Our Teaching Environment</h2>
 <div class="gallery">
@@ -62,9 +119,10 @@ footer{background:#111827;color:white;text-align:center;padding:15px}
 </div>
 </div>
 
+<!-- FREE DEMO -->
 <div class="box">
 <h2>🎓 Free Demo Class</h2>
-<p>Attend a FREE demo class and experience our teaching style before joining.</p>
+<p>Attend a FREE demo class and experience our teaching before joining.</p>
 <a class="btn" href="contact.html">Book Free Demo</a>
 </div>
 
@@ -73,6 +131,11 @@ footer{background:#111827;color:white;text-align:center;padding:15px}
 <footer>
 <p>© 2025 MP Tutorials | Kismathpur, Hyderabad</p>
 </footer>
-
+<a href="https://wa.me/918309735706" 
+   class="whatsapp-float" 
+   target="_blank"
+   title="Chat with MP Tutorials on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
 </body>
 </html>
