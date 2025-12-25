@@ -4,25 +4,83 @@
 <meta charset="UTF-8">
 <title>MP Tutorials</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-body{margin:0;font-family:Arial;background:#f3f4f6}
-header{background:#2563eb;color:white;padding:30px;text-align:center}
-section{padding:30px}
-.box{background:white;padding:20px;margin-bottom:20px;border-radius:10px}
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f3f4f6;
+}
+
+header{
+  background:#2563eb;
+  color:white;
+  padding:30px;
+  text-align:center;
+}
+
+section{
+  padding:30px;
+  max-width:900px;
+  margin:auto;
+}
+
+.box{
+  background:white;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Tutor ID card layout */
+.tutor-card{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.tutor-card img{
+  width:140px;
+  height:180px;
+  object-fit:cover;
+  border-radius:10px;
+  border:3px solid #2563eb;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>MP Tutorials</h1>
-<p>Kismathpur, Hyderabad</p>
+  <h1>MP Tutorials</h1>
+  <p>Kismathpur, Hyderabad</p>
 </header>
 
 <section>
-<div class="box">Home Tuition & Online Classes</div>
-<div class="box">Intermediate & Programming</div>
-<div class="box">Contact: 8309735706</div>
+
+  <!-- Tutor ID Card -->
+  <div class="box tutor-card">
+    <img src="Passport_Size_Photograph_10817082_264308854KWUKI1.jpeg" alt="Tutor Photo">
+
+    <div>
+      <h2>👨‍🏫 Tutor ID</h2>
+      <p><b>Name:</b> Parvathala Mokshith</p>
+      <p><b>Role:</b> Founder & Tutor</p>
+      <p><b>Qualification:</b> B.Tech CSE (Undergraduate)</p>
+      <p><b>College:</b> Vardhaman College of Engineering</p>
+      <p><b>Age:</b> 20</p>
+      <p><b>Special Focus:</b> Special attention and personal care for slow learners</p>
+      <p><b>Contact:</b> 8309735706</p>
+    </div>
+  </div>
+
+  <!-- Existing content -->
+  <div class="box">Home Tuition & Online Classes</div>
+  <div class="box">Intermediate & Programming</div>
+  <div class="box">Contact: 8309735706</div>
+
 </section>
 
 </body>
