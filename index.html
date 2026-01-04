@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>MP Tutorials</title>
@@ -12,6 +12,7 @@ body{
   background:#f3f4f6;
 }
 
+/* Header */
 header{
   background:#2563eb;
   color:white;
@@ -19,12 +20,14 @@ header{
   text-align:center;
 }
 
+/* Main section */
 section{
   padding:30px;
   max-width:900px;
   margin:auto;
 }
 
+/* Card box */
 .box{
   background:white;
   padding:20px;
@@ -33,12 +36,20 @@ section{
   box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Tutor ID card layout */
+/* Clickable headings */
+.box h2{
+  margin:0;
+  cursor:pointer;
+  color:#2563eb;
+}
+
+/* Tutor card */
 .tutor-card{
   display:flex;
   gap:20px;
   flex-wrap:wrap;
   align-items:center;
+  margin-top:15px;
 }
 
 .tutor-card img{
@@ -47,6 +58,11 @@ section{
   object-fit:cover;
   border-radius:10px;
   border:3px solid #2563eb;
+}
+
+/* Content spacing */
+.content{
+  margin-top:15px;
 }
 </style>
 </head>
@@ -60,29 +76,61 @@ section{
 
 <section>
 
-  <!-- Tutor ID Card -->
-  <div class="box tutor-card">
-    <img src="Passport_Size_Photograph_10817082_264308854KWUKI1.jpeg" alt="Tutor Photo">
+  <!-- Tutor ID -->
+  <div class="box">
+    <h2 onclick="toggleSection('tutor')">👨‍🏫 Tutor ID</h2>
 
-    <div>
-      <h2>👨‍🏫 Tutor ID</h2>
-      <p><b>Name:</b> Parvathala Mokshith</p>
-      <p><b>Role:</b> Founder & Tutor</p>
-      <p><b>Qualification:</b> B.Tech CSE (Undergraduate)</p>
-      <p><b>College:</b> Vardhaman College of Engineering</p>
-      <p><b>Age:</b> 20</p>
-      <p><b>Special Focus:</b> Special attention and personal care for slow learners</p>
-      <p><b>Contact:</b> 8309735706</p>
+    <div id="tutor" class="content">
+      <div class="tutor-card">
+        <img src="Passport_Size_Photograph_10817082_264308854KWUKI1.jpeg" alt="Tutor Photo">
+
+        <div>
+          <p><b>Name:</b> Parvathala Mokshith</p>
+          <p><b>Role:</b> Founder & Tutor</p>
+          <p><b>Qualification:</b> B.Tech CSE (Undergraduate)</p>
+          <p><b>College:</b> Vardhaman College of Engineering</p>
+          <p><b>Age:</b> 20</p>
+          <p><b>Special Focus:</b> Special attention and personal care for slow learners</p>
+          <p><b>Contact:</b> 8309735706</p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Existing content -->
-  <div class="box">Home Tuition & Online Classes</div>
-  <div class="box">Intermediate & Programming</div>
-  <div class="box">Contact: 8309735706</div>
+  <!-- Classes -->
+  <div class="box">
+    <h2 onclick="toggleSection('classes')">📘 Classes Offered</h2>
+
+    <div id="classes" class="content" style="display:none;">
+      <p>🏠 Home Tuition</p>
+      <p>💻 Online Classes</p>
+      <p>📚 Intermediate Subjects</p>
+      <p>👨‍💻 Programming Basics</p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="box">
+    <h2 onclick="toggleSection('contact')">📞 Contact Details</h2>
+
+    <div id="contact" class="content" style="display:none;">
+      <p><b>Phone:</b> 8309735706</p>
+      <p><b>Location:</b> Kismathpur, Hyderabad</p>
+    </div>
+  </div>
 
 </section>
 
+<script>
+function toggleSection(id){
+  var section = document.getElementById(id);
+  if(section.style.display === "none"){
+    section.style.display = "block";
+  } else {
+    section.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
-
